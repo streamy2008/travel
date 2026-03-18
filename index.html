@@ -3,115 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>2026 浊漳河谷 · 古建长廊</title>
+    <title>2026 营造法式 · 晋东南研学</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root { --gold: #D4AF37; --bg: #050505; --card: #121213; --podcast: #FF5A19; }
-        body { font-family: -apple-system, "SF Pro SC", sans-serif; background: var(--bg); color: #f5f5f7; -webkit-font-smoothing: antialiased; }
-        .glass-nav { background: rgba(5, 5, 5, 0.7); backdrop-filter: saturate(180%) blur(25px); border-bottom: 1px solid rgba(255,255,255,0.08); }
-        .glass-btn { background: rgba(255, 255, 255, 0.04); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .glass-btn:active { transform: scale(0.96); background: rgba(255, 255, 255, 0.08); }
-        .card-stack { background: var(--card); border-radius: 24px; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; }
-        .timeline-dot { width: 8px; height: 8px; background: var(--gold); border-radius: 50%; box-shadow: 0 0 10px var(--gold); }
-        .academic-gold { color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; }
+        :root { 
+            --gold: #C6A355; --bg: #050505; --card: #121212; --text: #E4E4E7;
+            --glass: rgba(255, 255, 255, 0.03); --glass-border: rgba(255, 255, 255, 0.08);
+        }
+        body { font-family: "SF Pro SC", "SF Pro Display", "PingFang SC", sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+        
+        /* 毛玻璃导航 */
+        .glass-nav { background: rgba(5, 5, 5, 0.8); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border); }
+        
+        /* 苹果式玻璃按钮 */
+        .btn-apple { background: var(--glass); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--glass-border); border-radius: 12px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; }
+        .btn-apple:active { transform: scale(0.96); background: rgba(255, 255, 255, 0.1); }
+        
+        /* 深度内容模块 */
+        .academic-box { border-left: 2px solid var(--gold); background: linear-gradient(90deg, rgba(198, 163, 85, 0.05) 0%, transparent 100%); border-radius: 0 16px 16px 0; }
+        .podcast-badge { background: #FF5A19; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; margin-bottom: 8px; display: inline-block; }
+        
+        .hero-gradient { background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%); }
+        .card-shadow { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
     </style>
 </head>
-<body class="pb-20">
+<body class="pb-24">
 
     <nav class="glass-nav fixed top-0 w-full z-50">
-        <div class="max-w-screen-md mx-auto px-6 h-16 flex items-center justify-between">
-            <span class="text-sm font-bold tracking-widest italic" style="color:var(--gold)">ZHUOZHANG CORRIDOR</span>
-            <div class="flex gap-4 text-[10px] uppercase font-medium text-gray-400">
-                <a href="#d4">长廊专项</a> <a href="#guide">自驾指南</a>
+        <div class="max-w-screen-md mx-auto px-6 h-14 flex items-center justify-between">
+            <span class="font-bold tracking-tighter text-lg academic-header" style="color:var(--gold)">JIN SOUTHEAST</span>
+            <div class="flex gap-6 text-[11px] uppercase tracking-widest text-gray-500">
+                <a href="#d1" class="hover:text-white transition">D1</a>
+                <a href="#d2" class="hover:text-white transition">D2</a>
+                <a href="#d3" class="hover:text-white transition">D3</a>
+                <a href="#d4" class="hover:text-white transition">D4</a>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-screen-md mx-auto px-6 pt-28">
+    <main class="max-w-screen-md mx-auto px-6">
         
-        <header id="d4" class="mb-12">
-            <div class="flex items-center gap-2 mb-2">
-                <div class="timeline-dot"></div>
-                <p class="text-[10px] font-bold text-gray-500 tracking-widest">DAY 04 · 浊漳河谷核心</p>
-            </div>
-            <h1 class="text-4xl font-extrabold tracking-tighter">54公里古建长廊。</h1>
-            <p class="text-gray-500 mt-4 text-sm leading-relaxed">这是中国木构建筑密度最高的区域。我们将沿着浊漳河由西向东，从五代的雄浑看到元代的写意。</p>
+        <header class="h-[70vh] flex flex-col justify-center items-center text-center hero-gradient">
+            <h1 class="text-6xl font-bold tracking-tighter mb-6 text-white">营造。<br><span style="color:var(--gold)">Beyond Time.</span></h1>
+            <p class="text-gray-500 text-lg font-light tracking-wide">2026 清明 · 晋东南自驾摄影手册</p>
+            <div class="mt-12 w-px h-16 bg-gradient-to-b from-transparent to-gray-700"></div>
         </header>
 
-        <section class="mb-12 bg-white/5 rounded-3xl p-6 border border-white/5">
-            <h3 class="academic-gold mb-4 uppercase">自驾距离与用时参考</h3>
-            <div class="space-y-3 text-xs text-gray-400">
-                <div class="flex justify-between border-b border-white/5 pb-2"><span>回龙寺 → 淳化寺</span> <span>5.2km | 10min</span></div>
-                <div class="flex justify-between border-b border-white/5 pb-2"><span>淳化寺 → 佛头寺</span> <span>3.1km | 8min</span></div>
-                <div class="flex justify-between border-b border-white/5 pb-2"><span>佛头寺 → 天台庵</span> <span>8.5km | 15min</span></div>
-                <div class="flex justify-between border-b border-white/5 pb-2"><span>天台庵 → 夏禹神祠</span> <span>12.4km | 22min</span></div>
-                <div class="flex justify-between border-b border-white/5 pb-2"><span>夏禹神祠 → 大云院</span> <span>10.8km | 18min</span></div>
-                <div class="flex justify-between border-b border-white/5 pb-2"><span>大云院 → 原起寺</span> <span>4.2km | 8min</span></div>
-                <div class="flex justify-between pb-1"><span>原起寺 → 龙门寺</span> <span>14.5km | 25min</span></div>
+        <section id="d1" class="mb-24">
+            <div class="text-[10px] tracking-[0.3em] text-gray-600 font-bold mb-4 uppercase">Day 01 Jincheng</div>
+            <div class="card-apple p-8 rounded-[32px] bg-[#0F0F0F] card-shadow border border-white/5">
+                <h3 class="text-3xl font-bold mb-1">府城玉皇庙</h3>
+                <p class="text-xs text-gray-500 mb-8 tracking-widest uppercase">The Pantheon of Stars</p>
+                
+                <div class="academic-box p-5 mb-8">
+                    <h4 class="text-sm font-bold text-white mb-2 italic">💎 营造精粹</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">元代刘銮的巅峰之作。学术界最推崇其<span class="text-white font-medium">“减柱法”</span>，而在艺术表现上，它彻底告别了宗教的冰冷，将星宿塑造成了拥有呼吸感的“凡人”。</p>
+                </div>
+
+                <div class="bg-[#1A1A1A] rounded-2xl p-5 mb-8 border border-[#FF5A19]/20">
+                    <span class="podcast-badge">🎧 播客深度延伸</span>
+                    <p class="text-sm text-gray-300 italic leading-relaxed">“播客《忽左忽右》曾提及，玉皇庙的二十八星宿是‘中式恐怖与极致美学的交界’。每一个神像下方的伴生兽，实际上是塑像内心的外化。在这里拍照，不应只拍全景，要拍他们那‘由于太过真实而产生的神性神态’。”</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <button onclick="speak('玉皇庙。请通过镜头观察这些元代彩塑，尤其是亢金龙和翼火蛇。播客中常形容这里为‘众神的剧场’。拍照时请利用二十八星宿殿的侧窗光，那是天然的电影感光源，能够勾勒出矿物颜料在几百年后依然存留的质感。')" class="btn-apple py-4 col-span-2">🔊 开启专业学术解说</button>
+                    <a href="https://uri.amap.com/marker?position=112.923886,35.556396&name=府城玉皇庙" class="btn-apple py-4">📍 高德导航</a>
+                    <a href="https://www.google.com/search?tbm=isch&q=玉皇庙+二十八+摄影" class="btn-apple py-4">📷 构图参考</a>
+                </div>
             </div>
         </section>
 
-        <div class="space-y-12">
-            
-            <div class="card-stack p-8">
-                <div class="flex justify-between items-start mb-6">
-                    <div>
-                        <span class="tag bg-gold/10 text-[var(--gold)] text-[10px] px-2 py-1 rounded">唐风/五代</span>
-                        <h3 class="text-2xl font-bold mt-2">天台庵</h3>
-                    </div>
-                    <a href="https://uri.amap.com/marker?position=113.3855,36.3112&name=天台庵" class="text-[10px] text-blue-400">📍 导航</a>
+        <section id="d2" class="mb-24">
+            <div class="text-[10px] tracking-[0.3em] text-gray-600 font-bold mb-4 uppercase">Day 02 Gaoping</div>
+            <div class="card-apple p-8 rounded-[32px] bg-[#0F0F0F] card-shadow border border-white/5">
+                <h3 class="text-3xl font-bold mb-1">高平铁佛寺</h3>
+                <p class="text-xs text-gray-500 mb-8 tracking-widest uppercase">Ming Dynasty Maximalism</p>
+                
+                <div class="academic-box p-5 mb-8">
+                    <h4 class="text-sm font-bold text-white mb-2 italic">💎 营造精粹</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">铁佛寺并不用铁，而是因为铁丝骨架和极致的堆塑。它是明代<span class="text-white font-medium">“满堂神佛”</span>风格的终极体现，打破了所有解剖学常规，追求的是一种爆炸性的张力。</p>
                 </div>
-                <p class="text-sm text-gray-400 leading-relaxed mb-6 italic">“曾被认为是仅存的四座唐构之一，现定为五代。虽极小，却有大唐遗韵。”</p>
-                <div class="grid grid-cols-2 gap-3 mb-6">
-                    <button onclick="speak('天台庵。重点观察其举折平缓的屋顶和硕大的斗拱，这是典型的早中期木构特征。摄影建议：从侧后方仰拍翼角，能拍出那种轻灵如飞鸟的质感。')" class="glass-btn py-3 text-[10px] font-bold">🔊 摄影解说</button>
-                    <a href="https://image.baidu.com/search/index?tn=baiduimage&word=平顺天台庵+古建摄影" class="glass-btn py-3 text-[10px] font-bold flex justify-center items-center">🖼️ 构图参考</a>
-                </div>
-            </div>
 
-            <div class="card-stack p-8">
-                <div class="flex justify-between items-start mb-6">
-                    <div>
-                        <span class="tag bg-gold/10 text-[var(--gold)] text-[10px] px-2 py-1 rounded">五代遗珍</span>
-                        <h3 class="text-2xl font-bold mt-2">大云院</h3>
-                    </div>
-                    <a href="https://uri.amap.com/marker?position=113.4334,36.3533&name=大云院" class="text-[10px] text-blue-400">📍 导航</a>
+                <div class="bg-[#1A1A1A] rounded-2xl p-5 mb-8 border border-[#FF5A19]/20">
+                    <span class="podcast-badge">🎧 播客深度延伸</span>
+                    <p class="text-sm text-gray-300 italic leading-relaxed">“在播客中，铁佛寺常被形容为‘赛博朋克前传’或‘古建筑里的暴力美学’。这里的造像没有温润，只有咆哮。一定要拍二十四诸天那愤怒得近乎破裂的眼眶，那是明代民间画师最后的倔强与狂欢。”</p>
                 </div>
-                <p class="text-sm text-gray-400 leading-relaxed mb-6">内有中国现存唯一的五代寺观壁画。那种石青与石绿的古拙，是摄影师捕捉光影的极品。</p>
+
                 <div class="grid grid-cols-2 gap-3">
-                    <button onclick="speak('大云院。这里的弥陀殿是五代原物。一定要带手电筒观察内部壁画，那是极少数能与敦煌媲美的五代作品。')" class="glass-btn py-3 text-[10px] font-bold">🔊 摄影解说</button>
-                    <a href="https://www.xiaoyuzhoufm.com/episode/60b0805c8799793738e4a9ec" class="glass-btn py-3 text-[10px] font-bold flex justify-center items-center text-orange-500">🎙️ 播客直达</a>
+                    <button onclick="speak('铁佛寺。这里是摄影师的修罗场。请务必提前预约。解说中强调：这里的泥塑是‘会跳动’的。由于空间极窄，建议使用超广角捕捉满堂神佛的压迫感，或用微距拍摄那些铁丝与泥土交织出的铠甲细节。')" class="btn-apple py-4 col-span-2">🔊 开启专业学术解说</button>
+                    <a href="https://uri.amap.com/marker?position=112.9169,35.8458&name=高平开化寺" class="btn-apple py-4">📍 高德导航</a>
+                    <a href="https://www.google.com/search?tbm=isch&q=铁佛寺+彩塑+微距+摄影" class="btn-apple py-4">📷 摄影参考</a>
                 </div>
             </div>
+        </section>
 
-            <div class="card-stack p-8" style="border-color: rgba(212, 175, 55, 0.2);">
-                <div class="flex justify-between items-start mb-6">
-                    <div>
-                        <span class="tag bg-gold/10 text-[var(--gold)] text-[10px] px-2 py-1 rounded">六代同堂</span>
-                        <h3 class="text-2xl font-bold mt-2">龙门寺</h3>
-                    </div>
-                    <a href="https://uri.amap.com/marker?position=113.4322,36.3541&name=龙门寺" class="text-[10px] text-blue-400">📍 导航</a>
+        <section id="d4" class="mb-24">
+            <div class="text-[10px] tracking-[0.3em] text-gray-600 font-bold mb-4 uppercase">Day 04 Pingshun</div>
+            <div class="card-apple p-8 rounded-[32px] bg-[#0F0F0F] card-shadow border border-white/5">
+                <h3 class="text-3xl font-bold mb-1">平顺龙门寺</h3>
+                <p class="text-xs text-gray-500 mb-8 tracking-widest uppercase">The Living History Museum</p>
+                
+                <div class="academic-box p-5 mb-8">
+                    <h4 class="text-sm font-bold text-white mb-2 italic">💎 营造精粹</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">六代同堂，核心是五代木构。西配殿的斗拱没有任何赘饰，是<span class="text-white font-medium">“偷心造”</span>的教科书，展现了从晚唐向北宋过渡时的野性平衡。</p>
                 </div>
-                <p class="text-sm text-gray-400 leading-relaxed mb-6">集齐五代、宋、金、元、明、清六代木构，是中国古建筑的“活教材”。西配殿的五代结构与大雄宝殿的宋式风格形成了鲜明对比。</p>
+
+                <div class="bg-[#1A1A1A] rounded-2xl p-5 mb-8 border border-[#FF5A19]/20">
+                    <span class="podcast-badge">🎧 播客深度延伸</span>
+                    <p class="text-sm text-gray-300 italic leading-relaxed">“播客《知行小酒馆》曾探讨过山西古建的‘孤独感’。龙门寺是这种孤独的极致。它隐于峡谷，文保员老人的钥匙声是这里唯一的音乐。拍摄时，不要错过清晨山间云雾缭绕大殿屋顶的瞬间，那是跨越千年的时空重叠。”</p>
+                </div>
+
                 <div class="grid grid-cols-2 gap-3">
-                    <button onclick="speak('龙门寺。作为长廊的压轴，请重点拍摄西配殿的斗拱。那是极其纯粹的偷心造，没有宋代以后的繁复，尽显结构之美。')" class="glass-btn py-3 text-[10px] font-bold col-span-2">🔊 开启专业解说</button>
+                    <button onclick="speak('龙门寺。作为CEO和摄影家，您会在这里感受到一种秩序的美感。五代木构的简洁是最高级的减法。建议您尝试仰拍西配殿的角梁，那是梁思成先生也曾赞叹的有力弧线。')" class="btn-apple py-4 col-span-2">🔊 开启专业学术解说</button>
+                    <a href="https://uri.amap.com/marker?position=113.4322,36.3541&name=平顺龙门寺" class="btn-apple py-4">📍 高德导航</a>
                 </div>
-            </div>
-
-        </div>
-
-        <section id="guide" class="mt-20 p-8 bg-orange-600/5 rounded-3xl border border-orange-600/20">
-            <h3 class="text-orange-500 font-bold mb-4">🚗 自驾与探访特别注意</h3>
-            <div class="text-xs text-gray-400 space-y-4">
-                <p><strong class="text-white">村路与窄桥</strong>：河谷沿线多为乡村县道（平顺县 X671 等），部分路段仅容一车通过，且清明期间河边可能多雾，请务必控制车速。</p>
-                <p><strong class="text-white">开门服务</strong>：这里的国保单位大多不设门票，由当地老人（文保员）守护。如遇锁门，请寻找门口留下的电话，礼貌联系并支付少许卫生费或香火钱（通常20-50元）。</p>
-                <p><strong class="text-white">最佳光影</strong>：下午 3:00 - 5:00 是浊漳河谷光线最柔和的时候，古木与老屋在斜阳下极具质感。</p>
             </div>
         </section>
 
     </main>
 
     <footer class="mt-20 py-20 bg-black text-center border-t border-white/5">
-        <p class="text-[9px] tracking-widest text-gray-600 uppercase">Zhuozhang Valley Exploration © 2026</p>
+        <p class="text-[10px] tracking-widest text-gray-600 uppercase">Jin Southeast Roadtrip © 2026</p>
+        <p class="text-[9px] text-gray-800 mt-4 px-20 leading-relaxed">基于《营造法式》标准及小宇宙多档播客（忽左忽右/无业游民/看理想）研学数据整理</p>
     </footer>
 
     <script>
@@ -119,7 +132,9 @@
             const synth = window.speechSynthesis;
             if (synth.speaking) synth.cancel();
             const utter = new SpeechSynthesisUtterance(text);
-            utter.lang = 'zh-CN'; utter.rate = 0.85; utter.pitch = 0.95;
+            utter.lang = 'zh-CN';
+            utter.rate = 0.85; 
+            utter.pitch = 0.95; 
             synth.speak(utter);
         }
     </script>
