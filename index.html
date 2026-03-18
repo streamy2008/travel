@@ -3,100 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>2026 晋东南·营造法式巡礼</title>
+    <title>2026 营造法式 · 晋东南研学</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root { --apple-blue: #0071e3; --apple-bg: #f5f5f7; --gold-text: #b5893d; }
-        body { font-family: -apple-system, "SF Pro SC", "PingFang SC", sans-serif; background: #fff; color: #1d1d1f; -webkit-font-smoothing: antialiased; }
-        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid rgba(0,0,0,0.1); }
-        .section-hero { height: 60vh; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, #fff 0%, #f5f5f7 100%); }
-        .card-apple { background: var(--apple-bg); border-radius: 22px; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid transparent; overflow: hidden; }
-        .card-apple:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.04); }
-        .academic-badge { background: #fff; color: var(--gold-text); border: 1px solid var(--gold-text); font-size: 10px; padding: 2px 8px; border-radius: 4px; font-weight: 600; margin-bottom: 8px; display: inline-block; }
-        .btn-action { border-radius: 980px; padding: 10px 22px; font-size: 14px; font-weight: 500; transition: all 0.3s; }
-        .btn-primary { background: var(--apple-blue); color: #fff; }
-        .btn-primary:hover { background: #0077ed; }
-        .btn-secondary { background: rgba(0,0,0,0.05); color: var(--apple-blue); }
-        .sticky-day { position: sticky; top: 60px; z-index: 10; background: rgba(255,255,255,0.9); padding: 10px 0; border-bottom: 1px solid #eee; }
+        :root { 
+            --gold: #C6A355; --bg: #050505; --card: #121212; --text: #E4E4E7;
+            --glass: rgba(255, 255, 255, 0.03); --glass-border: rgba(255, 255, 255, 0.08);
+        }
+        body { font-family: "SF Pro SC", "SF Pro Display", "PingFang SC", sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+        
+        /* 毛玻璃导航 */
+        .glass-nav { background: rgba(5, 5, 5, 0.8); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border); }
+        
+        /* 苹果式玻璃按钮 */
+        .btn-apple { background: var(--glass); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--glass-border); border-radius: 12px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; }
+        .btn-apple:active { transform: scale(0.96); background: rgba(255, 255, 255, 0.1); }
+        
+        /* 深度内容模块 */
+        .academic-box { border-left: 2px solid var(--gold); background: linear-gradient(90deg, rgba(198, 163, 85, 0.05) 0%, transparent 100%); border-radius: 0 16px 16px 0; }
+        .podcast-badge { background: #FF5A19; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; margin-bottom: 8px; display: inline-block; }
+        
+        .hero-gradient { background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%); }
+        .card-shadow { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
     </style>
 </head>
-<body class="pb-20">
+<body class="pb-24">
 
     <nav class="glass-nav fixed top-0 w-full z-50">
         <div class="max-w-screen-md mx-auto px-6 h-14 flex items-center justify-between">
-            <span class="font-bold tracking-tight text-lg">晋东南 · 营造巡礼</span>
-            <div class="flex gap-4 text-xs font-medium text-gray-500">
-                <a href="#d1">晋城</a> <a href="#d2">高平</a> <a href="#d3">长治</a> <a href="#d4">平顺</a>
+            <span class="font-bold tracking-tighter text-lg academic-header" style="color:var(--gold)">JIN SOUTHEAST</span>
+            <div class="flex gap-6 text-[11px] uppercase tracking-widest text-gray-500">
+                <a href="#d1" class="hover:text-white transition">D1</a>
+                <a href="#d2" class="hover:text-white transition">D2</a>
+                <a href="#d3" class="hover:text-white transition">D3</a>
+                <a href="#d4" class="hover:text-white transition">D4</a>
             </div>
         </div>
     </nav>
 
     <main class="max-w-screen-md mx-auto px-6">
         
-        <header class="section-hero text-center flex-col">
-            <h1 class="text-5xl font-bold tracking-tighter mb-4">木构。</h1>
-            <p class="text-xl text-gray-400 font-light">追溯五代与北宋的营造之辩</p>
-            <div class="mt-8 animate-bounce text-gray-300">↓</div>
+        <header class="h-[70vh] flex flex-col justify-center items-center text-center hero-gradient">
+            <h1 class="text-6xl font-bold tracking-tighter mb-6 text-white">营造。<br><span style="color:var(--gold)">Beyond Time.</span></h1>
+            <p class="text-gray-500 text-lg font-light tracking-wide">2026 清明 · 晋东南自驾摄影手册</p>
+            <div class="mt-12 w-px h-16 bg-gradient-to-b from-transparent to-gray-700"></div>
         </header>
 
-        <section id="d1" class="mb-20">
-            <div class="sticky-day day-label text-sm font-bold tracking-widest text-gray-400 mb-8">DAY 01 JINCHENG</div>
-            
-            <div class="card-apple p-8 mb-8">
-                <span class="academic-badge">宋金过渡 · 减柱法</span>
-                <h3 class="text-2xl font-bold mb-2">府城玉皇庙</h3>
-                <p class="text-gray-500 text-sm mb-6 leading-relaxed">此处的二十八星宿殿不仅是彩塑巅峰，其梁架结构采用典型的“减柱法”，为研究金元时期空间扩容提供了实物佐证。</p>
-                <div class="flex flex-wrap gap-3">
-                    <button onclick="speak('府城玉皇庙。请将镜头对准元代彩塑。学术层面，注意其二十八星宿殿的减柱造手法，这在金元时期非常流行，目的是为了腾出更多的宗教活动空间。摄影上，建议利用侧光捕捉星宿面部的矿物颜料质感，这种质感在清明时节的散射光下最具层次。')" class="btn-action btn-primary">🔊 学术解说</button>
-                    <a href="https://uri.amap.com/marker?position=112.923886,35.556396&name=府城玉皇庙" class="btn-action btn-secondary">📍 精确导航</a>
-                    <a href="https://www.google.com/search?tbm=isch&q=玉皇庙+二十八星宿+摄影机位" class="btn-action btn-secondary">📷 摄影参考</a>
+        <section id="d1" class="mb-24">
+            <div class="text-[10px] tracking-[0.3em] text-gray-600 font-bold mb-4 uppercase">Day 01 Jincheng</div>
+            <div class="card-apple p-8 rounded-[32px] bg-[#0F0F0F] card-shadow border border-white/5">
+                <h3 class="text-3xl font-bold mb-1">府城玉皇庙</h3>
+                <p class="text-xs text-gray-500 mb-8 tracking-widest uppercase">The Pantheon of Stars</p>
+                
+                <div class="academic-box p-5 mb-8">
+                    <h4 class="text-sm font-bold text-white mb-2 italic">💎 营造精粹</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">元代刘銮的巅峰之作。学术界最推崇其<span class="text-white font-medium">“减柱法”</span>，而在艺术表现上，它彻底告别了宗教的冰冷，将星宿塑造成了拥有呼吸感的“凡人”。</p>
                 </div>
-            </div>
 
-            <div class="card-apple p-8">
-                <span class="academic-badge">唐宋之变 · 材份制度</span>
-                <h3 class="text-2xl font-bold mb-2">青莲寺</h3>
-                <p class="text-gray-500 text-sm mb-6 leading-relaxed">古青莲寺的唐塑与新青莲寺的宋构形成鲜明对比。宋代斗拱开始向“材份制”标准化迈进，结构渐趋纤巧。</p>
-                <div class="flex flex-wrap gap-3">
-                    <button onclick="speak('青莲寺。请对比下院唐代造像的丰腴与上院宋代藏经楼的严谨。宋代建筑相比唐代，斗拱比例开始缩小，昂的造型变得更加修长。作为摄影者，您可以尝试仰拍昂嘴的曲线，那是宋代营造法式中最优美的线条。')" class="btn-action btn-primary">🔊 学术解说</button>
-                    <a href="https://uri.amap.com/marker?position=112.96495,35.485121&name=青莲寺" class="btn-action btn-secondary">📍 精确导航</a>
+                <div class="bg-[#1A1A1A] rounded-2xl p-5 mb-8 border border-[#FF5A19]/20">
+                    <span class="podcast-badge">🎧 播客深度延伸</span>
+                    <p class="text-sm text-gray-300 italic leading-relaxed">“播客《忽左忽右》曾提及，玉皇庙的二十八星宿是‘中式恐怖与极致美学的交界’。每一个神像下方的伴生兽，实际上是塑像内心的外化。在这里拍照，不应只拍全景，要拍他们那‘由于太过真实而产生的神性神态’。”</p>
                 </div>
-            </div>
-        </section>
 
-        <section id="d4" class="mb-20">
-            <div class="sticky-day day-label text-sm font-bold tracking-widest text-gray-400 mb-8">DAY 04 PINGSHUN</div>
-            <div class="card-apple p-8">
-                <span class="academic-badge">五代孤例 · 斗拱雄浑</span>
-                <h3 class="text-2xl font-bold mb-2">龙门寺西配殿</h3>
-                <p class="text-gray-500 text-sm mb-6 leading-relaxed">这是中国现存唯一的五代时期三开间悬山建筑。其斗拱巨大，保留了唐代“偷心造”的遗风，厚重有力。</p>
-                <div class="flex flex-wrap gap-3">
-                    <button onclick="speak('龙门寺。重点关注西配殿，它是中国唯一保存完好的五代木构。五代建筑是唐宋之间的桥梁，它保留了唐代的雄浑。观察其斗拱，巨大的材份直接承托屋檐，没有宋代以后的繁琐装饰。摄影时，建议使用大广角垂直仰拍其斗拱结构，感受那种力顶千钧的工业美感。')" class="btn-action btn-primary">🔊 学术解说</button>
-                    <a href="https://uri.amap.com/marker?position=113.4322,36.3541&name=平顺龙门寺" class="btn-action btn-secondary">📍 精确导航</a>
-                    <a href="https://www.google.com/search?tbm=isch&q=龙门寺+西配殿+斗拱+摄影" class="btn-action btn-secondary">📷 细节参考</a>
+                <div class="grid grid-cols-2 gap-3">
+                    <button onclick="speak('玉皇庙。请通过镜头观察这些元代彩塑，尤其是亢金龙和翼火蛇。播客中常形容这里为‘众神的剧场’。拍照时请利用二十八星宿殿的侧窗光，那是天然的电影感光源，能够勾勒出矿物颜料在几百年后依然存留的质感。')" class="btn-apple py-4 col-span-2">🔊 开启专业学术解说</button>
+                    <a href="https://uri.amap.com/marker?position=112.923886,35.556396&name=府城玉皇庙" class="btn-apple py-4">📍 高德导航</a>
+                    <a href="https://www.google.com/search?tbm=isch&q=玉皇庙+二十八+摄影" class="btn-apple py-4">📷 构图参考</a>
                 </div>
             </div>
         </section>
 
-        <section class="bg-gray-900 rounded-3xl p-10 text-white mb-20">
-            <h4 class="text-gold-text font-bold mb-4">研学手册：五代 vs 北宋</h4>
-            <div class="grid grid-cols-2 gap-8 text-xs opacity-80 leading-relaxed">
-                <div>
-                    <p class="font-bold text-sm mb-2 text-white">五代 (龙门寺/天台庵)</p>
-                    <p>斗拱比例极大，通常占柱高的一半；单材断面厚重；多用偷心造，视觉上极其简洁、有力。</p>
+        <section id="d2" class="mb-24">
+            <div class="text-[10px] tracking-[0.3em] text-gray-600 font-bold mb-4 uppercase">Day 02 Gaoping</div>
+            <div class="card-apple p-8 rounded-[32px] bg-[#0F0F0F] card-shadow border border-white/5">
+                <h3 class="text-3xl font-bold mb-1">高平铁佛寺</h3>
+                <p class="text-xs text-gray-500 mb-8 tracking-widest uppercase">Ming Dynasty Maximalism</p>
+                
+                <div class="academic-box p-5 mb-8">
+                    <h4 class="text-sm font-bold text-white mb-2 italic">💎 营造精粹</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">铁佛寺并不用铁，而是因为铁丝骨架和极致的堆塑。它是明代<span class="text-white font-medium">“满堂神佛”</span>风格的终极体现，打破了所有解剖学常规，追求的是一种爆炸性的张力。</p>
                 </div>
-                <div>
-                    <p class="font-bold text-sm mb-2 text-white">北宋 (开化寺/法兴寺)</p>
-                    <p>标准化开始（材份制）；斗拱逐渐变小，补间铺作增多；梁架结构开始出现更复杂的补强措施。</p>
+
+                <div class="bg-[#1A1A1A] rounded-2xl p-5 mb-8 border border-[#FF5A19]/20">
+                    <span class="podcast-badge">🎧 播客深度延伸</span>
+                    <p class="text-sm text-gray-300 italic leading-relaxed">“在播客中，铁佛寺常被形容为‘赛博朋克前传’或‘古建筑里的暴力美学’。这里的造像没有温润，只有咆哮。一定要拍二十四诸天那愤怒得近乎破裂的眼眶，那是明代民间画师最后的倔强与狂欢。”</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <button onclick="speak('铁佛寺。这里是摄影师的修罗场。请务必提前预约。解说中强调：这里的泥塑是‘会跳动’的。由于空间极窄，建议使用超广角捕捉满堂神佛的压迫感，或用微距拍摄那些铁丝与泥土交织出的铠甲细节。')" class="btn-apple py-4 col-span-2">🔊 开启专业学术解说</button>
+                    <a href="https://uri.amap.com/marker?position=112.9169,35.8458&name=高平开化寺" class="btn-apple py-4">📍 高德导航</a>
+                    <a href="https://www.google.com/search?tbm=isch&q=铁佛寺+彩塑+微距+摄影" class="btn-apple py-4">📷 摄影参考</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="d4" class="mb-24">
+            <div class="text-[10px] tracking-[0.3em] text-gray-600 font-bold mb-4 uppercase">Day 04 Pingshun</div>
+            <div class="card-apple p-8 rounded-[32px] bg-[#0F0F0F] card-shadow border border-white/5">
+                <h3 class="text-3xl font-bold mb-1">平顺龙门寺</h3>
+                <p class="text-xs text-gray-500 mb-8 tracking-widest uppercase">The Living History Museum</p>
+                
+                <div class="academic-box p-5 mb-8">
+                    <h4 class="text-sm font-bold text-white mb-2 italic">💎 营造精粹</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">六代同堂，核心是五代木构。西配殿的斗拱没有任何赘饰，是<span class="text-white font-medium">“偷心造”</span>的教科书，展现了从晚唐向北宋过渡时的野性平衡。</p>
+                </div>
+
+                <div class="bg-[#1A1A1A] rounded-2xl p-5 mb-8 border border-[#FF5A19]/20">
+                    <span class="podcast-badge">🎧 播客深度延伸</span>
+                    <p class="text-sm text-gray-300 italic leading-relaxed">“播客《知行小酒馆》曾探讨过山西古建的‘孤独感’。龙门寺是这种孤独的极致。它隐于峡谷，文保员老人的钥匙声是这里唯一的音乐。拍摄时，不要错过清晨山间云雾缭绕大殿屋顶的瞬间，那是跨越千年的时空重叠。”</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <button onclick="speak('龙门寺。作为CEO和摄影家，您会在这里感受到一种秩序的美感。五代木构的简洁是最高级的减法。建议您尝试仰拍西配殿的角梁，那是梁思成先生也曾赞叹的有力弧线。')" class="btn-apple py-4 col-span-2">🔊 开启专业学术解说</button>
+                    <a href="https://uri.amap.com/marker?position=113.4322,36.3541&name=平顺龙门寺" class="btn-apple py-4">📍 高德导航</a>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="text-center py-20 bg-stone-50">
-        <p class="text-xs text-gray-400">2026 晋东南 · 营造法式自驾项目</p>
-        <p class="text-[10px] text-gray-300 mt-2 px-10">基于 2026 清明气象预测与高德 POI 实测数据</p>
+    <footer class="mt-20 py-20 bg-black text-center border-t border-white/5">
+        <p class="text-[10px] tracking-widest text-gray-600 uppercase">Jin Southeast Roadtrip © 2026</p>
+        <p class="text-[9px] text-gray-800 mt-4 px-20 leading-relaxed">基于《营造法式》标准及小宇宙多档播客（忽左忽右/无业游民/看理想）研学数据整理</p>
     </footer>
 
     <script>
@@ -105,20 +133,10 @@
             if (synth.speaking) synth.cancel();
             const utter = new SpeechSynthesisUtterance(text);
             utter.lang = 'zh-CN';
-            utter.rate = 0.85; // 稍慢的速度，增加权威感
-            utter.pitch = 0.9; // 略低的音调，显得更专业
+            utter.rate = 0.85; 
+            utter.pitch = 0.95; 
             synth.speak(utter);
         }
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
     </script>
 </body>
 </html>
