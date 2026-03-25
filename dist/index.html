@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#050505">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <title>2026 营造法式 · 晋东南研学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root { 
+            --gold: #C6A355; --bg: #050505; --card: #121212; --text: #E4E4E7;
+            --glass: rgba(255, 255, 255, 0.03); --glass-border: rgba(255, 255, 255, 0.08);
+        }
+        body { font-family: "SF Pro SC", "SF Pro Display", "PingFang SC", sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
+        
+        /* 毛玻璃导航 */
+        .glass-nav { background: rgba(5, 5, 5, 0.8); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border); }
+        
+        /* 苹果式玻璃按钮 */
+        .btn-apple { background: var(--glass); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--glass-border); border-radius: 12px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; }
+        .btn-apple:active { transform: scale(0.96); background: rgba(255, 255, 255, 0.1); }
+        
+        /* 深度内容模块 */
+        .academic-box { border-left: 2px solid var(--gold); background: linear-gradient(90deg, rgba(198, 163, 85, 0.05) 0%, transparent 100%); border-radius: 0 16px 16px 0; }
+        .podcast-badge { background: #FF5A19; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; margin-bottom: 8px; display: inline-block; }
+        
+        .hero-gradient { background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%); }
+        .card-shadow { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+    </style>
+  <script type="module" crossorigin src="/assets/index-gv6Co-IG.js"></script>
+<link rel="manifest" href="/manifest.webmanifest"></head>
+<body class="pb-24">
+
+    <nav class="glass-nav fixed top-0 w-full z-50">
+        <div class="max-w-screen-md mx-auto px-6 h-14 flex items-center justify-between">
+            <span class="font-bold tracking-tighter text-lg academic-header" style="color:var(--gold)">JIN SOUTHEAST</span>
+            <div class="flex gap-6 text-[11px] uppercase tracking-widest text-gray-500">
+                <a href="#d1" class="hover:text-white transition">D1</a>
+                <a href="#d2" class="hover:text-white transition">D2</a>
+                <a href="#d3" class="hover:text-white transition">D3</a>
+                <a href="#d4" class="hover:text-white transition">D4</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-screen-md mx-auto px-6">
+        
+        <header class="h-[70vh] flex flex-col justify-center items-center text-center hero-gradient">
+            <h1 class="text-6xl font-bold tracking-tighter mb-6 text-white">营造。<br><span style="color:var(--gold)">Beyond Time.</span></h1>
+            <p class="text-gray-500 text-lg font-light tracking-wide">2026 清明 · 晋东南自驾摄影手册</p>
+            <div class="mt-12 w-px h-16 bg-gradient-to-b from-transparent to-gray-700"></div>
+        </header>
+
+        <section id="d1" class="mb-24">
+            <div class="text-[10px] tracking-[0.3em] text-gray-600 font-bold mb-4 uppercase">Day 01 Jincheng</div>
+            <div class="card-apple p-8 rounded-[32px] bg-[#0F0F0F] card-shadow border border-white/5">
+                <h3 class="text-3xl font-bold mb-1">府城玉皇庙</h3>
+                <p class="text-xs text-gray-500 mb-8 tracking-widest uppercase">The Pantheon of Stars</p>
+                
+                <div class="academic-box p-5 mb-8">
+                    <h4 class="text-sm font-bold text-white mb-2 italic">💎 营造精粹</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">元代刘銮的巅峰之作。学术界最推崇其<span class="text-white font-medium">“减柱法”</span>，而在艺术表现上，它彻底告别了宗教的冰冷，将星宿塑造成了拥有呼吸感的“凡人”。</p>
+                </div>
+
+                <div class="bg-[#1A1A1A] rounded-2xl p-5 mb-8 border border-[#FF5A19]/20">
+                    <span class="podcast-badge">🎧 播客深度延伸</span>
+                    <p class="text-sm text-gray-300 italic leading-relaxed">“播客《忽左忽右》曾提及，玉皇庙的二十八星宿是‘中式恐怖与极致美学的交界’。每一个神像下方的伴生兽，实际上是塑像内心的外化。在这里拍照，不应只拍全景，要拍他们那‘由于太过真实而产生的神性神态’。”</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <button onclick="speak('玉皇庙。请通过镜头观察这些元代彩塑，尤其是亢金龙和翼火蛇。播客中常形容这里为‘众神的剧场’。拍照时请利用二十八星宿殿的侧窗光，那是天然的电影感光源，能够勾勒出矿物颜料在几百年后依然存留的质感。')" class="btn-apple py-4 col-span-2">🔊 开启专业学术解说</button>
+                    <a href="https://uri.amap.com/marker?position=112.923886,35.556396&name=府城玉皇庙" class="btn-apple py-4">📍 高德导航</a>
+                    <a href="https://www.google.com/search?tbm=isch&q=玉皇庙+二十八+摄影" class="btn-apple py-4">📷 构图参考</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="d2" class="mb-24">
+            <div class="text-[10px] tracking-[0.3em] text-gray-600 font-bold mb-4 uppercase">Day 02 Gaoping</div>
+            <div class="card-apple p-8 rounded-[32px] bg-[#0F0F0F] card-shadow border border-white/5">
+                <h3 class="text-3xl font-bold mb-1">高平铁佛寺</h3>
+                <p class="text-xs text-gray-500 mb-8 tracking-widest uppercase">Ming Dynasty Maximalism</p>
+                
+                <div class="academic-box p-5 mb-8">
+                    <h4 class="text-sm font-bold text-white mb-2 italic">💎 营造精粹</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">铁佛寺并不用铁，而是因为铁丝骨架和极致的堆塑。它是明代<span class="text-white font-medium">“满堂神佛”</span>风格的终极体现，打破了所有解剖学常规，追求的是一种爆炸性的张力。</p>
+                </div>
+
+                <div class="bg-[#1A1A1A] rounded-2xl p-5 mb-8 border border-[#FF5A19]/20">
+                    <span class="podcast-badge">🎧 播客深度延伸</span>
+                    <p class="text-sm text-gray-300 italic leading-relaxed">“在播客中，铁佛寺常被形容为‘赛博朋克前传’或‘古建筑里的暴力美学’。这里的造像没有温润，只有咆哮。一定要拍二十四诸天那愤怒得近乎破裂的眼眶，那是明代民间画师最后的倔强与狂欢。”</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <button onclick="speak('铁佛寺。这里是摄影师的修罗场。请务必提前预约。解说中强调：这里的泥塑是‘会跳动’的。由于空间极窄，建议使用超广角捕捉满堂神佛的压迫感，或用微距拍摄那些铁丝与泥土交织出的铠甲细节。')" class="btn-apple py-4 col-span-2">🔊 开启专业学术解说</button>
+                    <a href="https://uri.amap.com/marker?position=112.9169,35.8458&name=高平开化寺" class="btn-apple py-4">📍 高德导航</a>
+                    <a href="https://www.google.com/search?tbm=isch&q=铁佛寺+彩塑+微距+摄影" class="btn-apple py-4">📷 摄影参考</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="d4" class="mb-24">
+            <div class="text-[10px] tracking-[0.3em] text-gray-600 font-bold mb-4 uppercase">Day 04 Pingshun</div>
+            <div class="card-apple p-8 rounded-[32px] bg-[#0F0F0F] card-shadow border border-white/5">
+                <h3 class="text-3xl font-bold mb-1">平顺龙门寺</h3>
+                <p class="text-xs text-gray-500 mb-8 tracking-widest uppercase">The Living History Museum</p>
+                
+                <div class="academic-box p-5 mb-8">
+                    <h4 class="text-sm font-bold text-white mb-2 italic">💎 营造精粹</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">六代同堂，核心是五代木构。西配殿的斗拱没有任何赘饰，是<span class="text-white font-medium">“偷心造”</span>的教科书，展现了从晚唐向北宋过渡时的野性平衡。</p>
+                </div>
+
+                <div class="bg-[#1A1A1A] rounded-2xl p-5 mb-8 border border-[#FF5A19]/20">
+                    <span class="podcast-badge">🎧 播客深度延伸</span>
+                    <p class="text-sm text-gray-300 italic leading-relaxed">“播客《知行小酒馆》曾探讨过山西古建的‘孤独感’。龙门寺是这种孤独的极致。它隐于峡谷，文保员老人的钥匙声是这里唯一的音乐。拍摄时，不要错过清晨山间云雾缭绕大殿屋顶的瞬间，那是跨越千年的时空重叠。”</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <button onclick="speak('龙门寺。作为CEO和摄影家，您会在这里感受到一种秩序的美感。五代木构的简洁是最高级的减法。建议您尝试仰拍西配殿的角梁，那是梁思成先生也曾赞叹的有力弧线。')" class="btn-apple py-4 col-span-2">🔊 开启专业学术解说</button>
+                    <a href="https://uri.amap.com/marker?position=113.4322,36.3541&name=平顺龙门寺" class="btn-apple py-4">📍 高德导航</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-20 py-20 bg-black text-center border-t border-white/5">
+        <p class="text-[10px] tracking-widest text-gray-600 uppercase">Jin Southeast Roadtrip © 2026</p>
+        <p class="text-[9px] text-gray-800 mt-4 px-20 leading-relaxed">基于《营造法式》标准及小宇宙多档播客（忽左忽右/无业游民/看理想）研学数据整理</p>
+    </footer>
+
+    <script>
+        function speak(text) {
+            const synth = window.speechSynthesis;
+            if (synth.speaking) synth.cancel();
+            const utter = new SpeechSynthesisUtterance(text);
+            utter.lang = 'zh-CN';
+            utter.rate = 0.85;
+            utter.pitch = 0.95;
+            synth.speak(utter);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "营造法式 · 晋东南研学",
+  "short_name": "营造研学",
+  "description": "2026 晋东南自驾摄影研学手册",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "raiinglogo.PNG",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
