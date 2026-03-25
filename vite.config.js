@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['raiinglogo.PNG'],
+      includeAssets: ['raiinglogo.PNG', 'icon-192.png', 'icon-512.png', 'icon-1024.png'],
       manifest: {
         name: '营造法式 · 晋东南研学',
         short_name: '营造研学',
@@ -17,8 +17,20 @@ export default defineConfig({
         start_url: '.',
         icons: [
           {
-            src: '/raiinglogo.PNG',
+            src: '/icon-192.png',
+            sizes: '192x192',
+            type: 'image/png',
+            purpose: 'any maskable'
+          },
+          {
+            src: '/icon-512.png',
             sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable'
+          },
+          {
+            src: '/icon-1024.png',
+            sizes: '1024x1024',
             type: 'image/png',
             purpose: 'any maskable'
           }
