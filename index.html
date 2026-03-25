@@ -35,10 +35,10 @@
     </style>
 </head>
 <body class="pb-24">
-    <div id="pwa-install-banner" style="display:none; position:fixed; bottom:16px; left:50%; transform:translateX(-50%); z-index:100; background:#111; color:#fff; border:1px solid rgba(255,255,255,.15); border-radius:14px; padding:9px 14px; display:flex; align-items:center; gap:8px; box-shadow:0 8px 24px rgba(0,0,0,.6);">
-        <span>📲 安装此应用以更佳体验</span>
-        <button id="btn-install-pwa" style="background:linear-gradient(90deg,#FF5A19,#C6A355); border:none; color:#fff; border-radius:10px; padding:.5rem .9rem; font-weight:700; cursor:pointer;">安装</button>
-        <button id="btn-dismiss-pwa" style="background:none; border:1px solid rgba(255,255,255,.35); color:#eee; border-radius:10px; padding:.4rem .7rem; cursor:pointer;">略过</button>
+    <div id="pwa-install-banner" style="display:none; position:fixed; bottom:12px; left:50%; transform:translateX(-50%); z-index:100; background:#111; color:#fff; border:1px solid rgba(255,255,255,.2); border-radius:10px; padding:6px 10px; display:flex; align-items:center; gap:8px; box-shadow:0 6px 16px rgba(0,0,0,.4); font-size:12px; max-width:90%; min-width:220px;">
+        <span id="pwa-install-text" style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">📲 体验更佳，请安装应用</span>
+        <button id="btn-install-pwa" style="min-width:60px; border:none; color:#fff; background:linear-gradient(90deg,#FF5A19,#C6A355); border-radius:8px; padding:4px 9px; font-weight:700; font-size:11px; cursor:pointer;">安装</button>
+        <button id="btn-dismiss-pwa" style="min-width:60px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.2); color:#fff; border-radius:8px; padding:4px 9px; font-size:11px; cursor:pointer;">略过</button>
     </div>
 
     <div id="pwa-status" style="position:fixed; top:86px; right:16px; z-index:100; background:rgba(20,20,20,0.8); color:#fff; border:1px solid rgba(255,255,255,.2); border-radius:10px; padding:6px 10px; font-size:12px; backdrop-filter:blur(7px);">
